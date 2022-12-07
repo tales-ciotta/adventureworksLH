@@ -6,24 +6,24 @@ sources:
     description:
     tables:     
       - name: sales_salesorderheader
-        description: 
+        description: General sales order information.
       - name: sales_salesorderdetail
-        description: 
+        description: Individual products associated with a specific sales order.
       - name: sales_creditcard
-        description: 
+        description: Customer credit card information.
       - name: sales_salesreason
-        description: 
+        description: Lookup table of customer purchase reasons.
       - name: sales_customer
-        description: 
+        description: Current customer information.
       - name: person_address
-        description: 
+        description: Street address information for customers, employees, and vendors.
       - name: person_stateprovince
-        description: 
+        description: State and province lookup table.
       - name: person_countryregion
-        description: 
+        description: Lookup table containing the ISO standard codes for countries and regions.
       - name: production_product
-        description: 
+        description: Products sold or used in the manfacturing of sold products.
       - name: person_person
-        description: 
+        description: Human beings involved with AdventureWorks such as employees, customer contacts, and vendor contacts.
       - name: sales_salesorderheadersalesreason
-        description:
+        description: Cross-reference table mapping sales orders to sales reason codes.
