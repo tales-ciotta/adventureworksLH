@@ -25,7 +25,5 @@ sources:
         description: 
       - name: person_person
         description: 
-      - name: person_stateprovince
-        description: 
       - name: sales_salesorderheadersalesreason
         description:
