@@ -1,0 +1,31 @@
+version: 2
+
+sources:
+  - name: aw
+    schema: aw
+    description:
+    tables:     
+      - name: sales_salesorderheader
+        description: 
+      - name: sales_salesorderdetail
+        description: 
+      - name: sales_creditcard
+        description: 
+      - name: sales_salesreason
+        description: 
+      - name: sales_customer
+        description: 
+      - name: person_address
+        description: 
+      - name: person_stateprovince
+        description: 
+      - name: person_countryregion
+        description: 
+      - name: production_product
+        description: 
+      - name: person_person
+        description: 
+      - name: person_stateprovince
+        description: 
+      - name: sales_salesorderheadersalesreason
+        description:
