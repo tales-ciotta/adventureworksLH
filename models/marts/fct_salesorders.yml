@@ -13,7 +13,7 @@ models:
       - name: creditcard_fk
         description: The foreign key of the creditcard
 
-       - name: product_fk
+      - name: product_fk
         description: The foreign key of the product
 
       - name: creditcard_fk
@@ -34,9 +34,9 @@ models:
       - name: salesorderid
         description: The id of orders
       
-      -name: total_price
+      - name: total_price
         description: The gross total
       
-      -name: duedate
+      - name: duedate
         description: Date the order is due
 
