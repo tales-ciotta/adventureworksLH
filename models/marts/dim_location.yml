@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: dim_location
+    columns:
+      - name: location_sk
+        description: The primary key of the location
+        tests:
+          - unique
+          - not_null

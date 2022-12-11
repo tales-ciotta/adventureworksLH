@@ -3,7 +3,7 @@ with source_data as (
         addressid			
         , addressline1				
         , addressline2				
-        , city	
+        , city
         , modifieddate			
         , postalcode
         , rowguid			

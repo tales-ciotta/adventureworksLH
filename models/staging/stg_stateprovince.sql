@@ -4,7 +4,7 @@ with source_data as (
         , stateprovincecode			
         , countryregioncode			
         , isonlystateprovinceflag	
-        , name as stateprovince_name		
+        , name as state_name		
         , territoryid		
         , rowguid			
         , modifieddate		
