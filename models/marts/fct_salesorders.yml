@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: fct_order_details
+  - name: fct_salesorders
     columns:
     
       - name: product_fk
