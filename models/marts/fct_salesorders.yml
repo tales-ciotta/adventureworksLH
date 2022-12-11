@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: fct_order_details
+    columns:
+    
+      - name: product_fk
+        description: The foreign key of the product
+
+      - name: customer_fk
+        description: The foreign key of the customer
+
+      - name: creditcard_fk
+        description: The foreign key of the creditcard
+
+       - name: product_fk
+        description: The foreign key of the product
+
+      - name: creditcard_fk
+        description: The foreign key of the creditcard      
+
+      - name: unitprice
+        description: The unit price of the product.
+
+      - name: orderqty
+        description: The quantity of the product. 
+
+      - name: orderdate
+        description: The sale's date.
+ 
+      - name: status_salesorderheader
+        description: The order's status
+
+      - name: salesorderid
+        description: The id of orders
+      
+      -name: total_price
+        description: The gross total
+      
+      -name: duedate
+        description: Date the order is due
+
