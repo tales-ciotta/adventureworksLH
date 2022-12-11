@@ -29,9 +29,9 @@ with creditcard as (
 , first_join as (
     select
         salesorderheader.salesorderid
-        , customer.customer_sk as customer_sk
-        , creditcard.creditcard_sk as creditcard_sk
-        , location.location_sk as location_sk        
+        , customer.customer_sk as customer_fk
+        , creditcard.creditcard_sk as creditcard_fk
+        , location.location_sk as location_fk        
         , salesorderheader.status_salesorderheader
         , salesorderheader.orderdate
         , salesorderheader.duedate
@@ -48,7 +48,7 @@ with creditcard as (
 , second_join as (
     select
         salesorderdetail.salesorderid
-        , product.product_sk as product_sk
+        , product.product_sk as product_fk
         , salesorderdetail.orderqty as orderqty
         , salesorderdetail.unitprice as unitprice
         , salesorderdetail.unitpricediscount
@@ -61,16 +61,16 @@ with creditcard as (
     select 
         row_number() over (order by 
             salesorderheader.salesorderid
-            , salesorderheader.location_sk
-            , salesorderheader.customer_sk
-            , salesorderheader.creditcard_sk
-            , salesorderdetail.product_sk
+            , salesorderheader.location_fk
+            , salesorderheader.customer_fk
+            , salesorderheader.creditcard_fk
+            , salesorderdetail.product_fk
         ) as salesorder_sk -- auto-incremental surrogate key
         , salesorderheader.salesorderid
-        , salesorderheader.location_sk
-        , salesorderheader.customer_sk
-        , salesorderheader.creditcard_sk
-        , salesorderdetail.product_sk
+        , salesorderheader.location_fk
+        , salesorderheader.customer_fk
+        , salesorderheader.creditcard_fk
+        , salesorderdetail.product_fk
         , salesorderheader.orderdate			
         , salesorderheader.duedate			
         , salesorderheader.shipdate
